@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_fact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:text="Some fact #1"
+        android:layout_margin="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorButtonTrue"
+            android:text="TRUE"
+            android:textSize="24sp"
+            android:layout_marginRight="16dp"
+            android:onClick="onTrueButtonClicked"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorButtonFalse"
+            android:text="FALSE"
+            android:textSize="24sp"
+            android:onClick="onFalseButtonClicked"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:text="Score:0"
+        android:layout_margin="16dp"/>
+
+
+</LinearLayout>
